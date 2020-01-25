@@ -1,0 +1,97 @@
+@import '../queries';
+@import '../colors';
+@import '../sizes';
+@import '../animations';
+
+.Sidebar {
+  animation: moveLeftToRight 0.8s backwards ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0 0 20%;
+  background-color: $sidebar-color;
+  position: relative;
+  &__logo {
+    &:hover {
+      cursor: pointer;
+    }
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include laptop-md {
+      margin-top: 5rem;
+    }
+    @include tablet {
+      margin-top: 0;
+    }
+    &--name {
+      margin-right: 2rem;
+    }
+
+    &--img {
+      width: 12%;
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+  &__browse,
+  &__categories {
+    margin-top: 8rem;
+    animation: moveLeftToRightShort 0.8s 0.2s backwards ease-in;
+  }
+  &__browse,
+  &__categories {
+    &-nav {
+      margin-top: 2rem;
+    }
+    &-item {
+      position: relative;
+    }
+    &-item:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+      height: 100%;
+      background: $blue-color;
+      width: 0.5rem;
+      border-radius: 15px;
+      transform: scaleY(0);
+      transition: transform 0.2s;
+    }
+    &-item:hover::before {
+      transform: scaleY(1);
+    }
+
+    &-link {
+      display: block;
+      padding: 1rem 4rem;
+      transition: all 0.2s;
+    }
+    &-link:hover,
+    &-link:active {
+      transform: scale(1.1);
+      color: $blue-color;
+    }
+  }
+  &__categories-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  &__legal {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    color: darken(#fff, 50%);
+    animation: moveLeftToRightShort 0.8s 0.2s backwards ease-in;
+    & a {
+      color: $blue-color;
+    }
+  }
+}
