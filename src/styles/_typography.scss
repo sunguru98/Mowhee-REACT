@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha');
+
+html{
+    font-family: 'Avenir LT Std 55 Roman', Avenir, Arial, sans-serif;
+}
+
+.Sidebar__logo{ 
+    font-family: Sriracha, sans-serif; 
+    font-size: 2.5rem;
+}
+
+.primary-heading{
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    animation: fadeIn 0.5s 0.5s backwards linear;
+    @include laptop {
+        font-size: 3.75rem;
+    }
+}
+.secondary-heading{
+    font-family: 'Avenir LT Std 65 Medium', Avenir, Arial, sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    color: $title-color;
+    letter-spacing: 2px;
+}
+
+.Sidebar__browse-nav, .Sidebar__categories-nav{ 
+    font-size: 1.5rem; text-transform: capitalize;
+    letter-spacing: 1px; 
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover{
+    text-decoration: none;
+    color: $categories-color;
+}
+
+.movies__likes--panel h3{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+    font-family: 'Avenir LT Std 55 Roman', Avenir, sans-serif;
+}
+.movies__likes--panel p{
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Avenir LT Std 65 Medium', Avenir, sans-serif;
+}
+
+.movies__search--info{
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+.movies__search--text::placeholder{ font-size: 1.2rem; }
+.movies__search--text{ 
+    font-size: 1.5rem;
+    font-family: "Avenir LT Std 55 Roman", Avenir, Arial, sans-serif;
+}
+.movies__user--name { font-size: 1.5rem; }
+.movies__categories h2{
+    font-size: 1.5rem;
+    color: $medium-white-color;
+    font-family: 'Avenir LT Std 35 Light', sans-serif;
+    letter-spacing: 1px;
+}
+
+.movies-detail__link--favourite { line-height: 1.5; }
+.movies__specific h2{ font-size: 1.75rem; color: $medium-white-color ; }
+.movies__specific h1{ font-size: 5rem;}
+.movies__specific span{ font-size: 1.3rem; }
+.movies-detail .movies-detail__title{
+    font-family: 'Avenir LT Std 95 Black', Avenir, sans-serif;
+    font-size: 5.5rem;
+    letter-spacing: 0.75px;
+    @include tablet{
+        letter-spacing: 0.25px;
+    }
+    margin-top: 7rem;
+    @include tablet-md{
+        margin-top: 4rem;
+    }
+    text-transform: capitalize;
+}
+
+.movies-detail__type span { 
+    font-size: 1.75rem; 
+    @include tablet-md{
+        font-size: 1.5rem;
+    }
+    color: $categories-color;}
+
+.movies-detail__stars--rating{
+    font-size: 2rem;
+}
+
+.movies-detail__paragraph{
+    font-size: 1.7rem;
+    @include tablet-sm{
+        font-size: 1.75rem;
+    }
+    line-height: 1.7;
+    color: $medium-white-color;
+}
+
+.movies-detail__link{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.movies-detail__cast h3, .movies-detail__direction h3{ 
+    font-family: 'Avenir LT Std 65 Medium', Avenir, sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+figcaption, .movies-detail__direction p{
+    font-size: 1.4rem;
+    @include tablet-sm{
+        font-size: 1.6rem;
+    }
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: $medium-white-color;
+}
+
+.movies__categories-recommended-item--description {
+    font-size: 1.2rem;
+}

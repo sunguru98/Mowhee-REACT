@@ -7,6 +7,7 @@
 }
 
 html {
+  color: $white-color;
   font-size: 62.5%;
   @include laptop {
     font-size: 60%;
@@ -17,6 +18,7 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   height: 100vh;
   background: $main-color;
 }
