@@ -1,0 +1,56 @@
+@keyframes pulsate{
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.2);
+      opacity: 0;
+  }
+}
+
+@keyframes moveLeftToRight{
+  from{
+      transform: translateX(-10rem);
+      opacity: 0;
+  }
+  to{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes moveLeftToRightShort{
+  from{
+      transform: translateX(-1rem);
+      opacity: 0;
+  }
+  to{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to{ opacity: 1}
+}
+
+@keyframes moveBottomToTop{
+  from {
+      opacity: 0;
+      transform: translateY(2rem);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
